@@ -16,8 +16,6 @@
 
 """Module implementing upload functionality."""
 
-from __future__ import unicode_literals
-
 import attr
 import time
 import json

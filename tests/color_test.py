@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import unicode_literals
-
 import webcolors
 from collections import OrderedDict
 from hypothesis import given

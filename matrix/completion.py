@@ -14,8 +14,6 @@
 # CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
 # CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-from __future__ import unicode_literals
-
 from typing import List, Optional
 from matrix.globals import SERVERS, W, SCRIPT_NAME
 from matrix.utf import utf8_decode

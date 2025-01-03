@@ -15,8 +15,7 @@
 # CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
 # CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-from __future__ import unicode_literals, division
-
+import sys
 import time
 from typing import Any, Dict, List
 
@@ -25,6 +24,11 @@ from .globals import W
 if False:
     from .server import MatrixServer
 
+
+def bytes_to_native_str(b, encoding='utf-8' if sys.version_info[0] >= 3 else None):
+    return b.decode(encoding) if sys.version_info[0] >= 3 else (
+            b.__native__() if hasattr(b, '__native__') else b)
+    
 
 def key_from_value(dictionary, value):
     # type: (Dict[str, Any], Any) -> str

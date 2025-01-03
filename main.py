@@ -15,8 +15,6 @@
 # CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
 # CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-from __future__ import unicode_literals
-
 import os
 
 # See if there is a `venv` directory next to our script, and use that if
@@ -41,7 +39,6 @@ from typing import Any, AnyStr, Deque, Dict, List, Optional, Set, Text, Tuple
 import logbook
 import json
 import OpenSSL.crypto as crypto
-from future.utils import bytes_to_native_str as n
 from logbook import Logger, StreamHandler
 
 try:
@@ -96,7 +93,7 @@ from matrix.server import (MatrixServer, create_default_server,
                            matrix_config_server_write_cb, matrix_timer_cb,
                            send_cb, matrix_load_users_cb)
 from matrix.utf import utf8_decode
-from matrix.utils import server_buffer_prnt, server_buffer_set_title
+from matrix.utils import server_buffer_prnt, server_buffer_set_title, bytes_to_native_str as n
 
 from matrix.uploads import UploadsBuffer, upload_cb
 

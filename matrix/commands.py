@@ -15,15 +15,14 @@
 # CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
 # CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-from __future__ import unicode_literals
 import argparse
 import os
 import re
 import shlex
 from builtins import str
-from future.moves.itertools import zip_longest
 from collections import defaultdict
 from functools import partial
+from itertools import zip_longest
 from nio import EncryptionError, LocalProtocolError
 
 from . import globals as G

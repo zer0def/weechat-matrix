@@ -17,7 +17,6 @@
 
 """Module for rendering matrix messages in Weechat."""
 
-from __future__ import unicode_literals
 from nio import Api
 from .globals import W
 from .colors import Formatted
